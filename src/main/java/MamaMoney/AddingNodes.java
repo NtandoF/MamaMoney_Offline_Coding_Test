@@ -10,7 +10,10 @@ class AddNode extends Node2 {
 
     List<Node2.Node> addNodes = new ArrayList<>();
 
-
+    public static List sortList(){
+        Collections.sort(sortList());
+        return sortList();
+    }
 
     public void add(int i, int b, String c) {
         addNodes.add(new Node2.Node(i, b, c));
