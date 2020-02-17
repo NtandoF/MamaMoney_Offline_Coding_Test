@@ -1,17 +1,19 @@
 package MamaMoney;
 
-public class Node2{
+public class Node2<N> {
 
   public static class Node<M> {
         private int id;
         int parentID;
-        String lable;
+        String label;
 
         public Node(int id, int parentID, String lable) {
             this.id = id;
             this.parentID = parentID;
-            this.lable = lable;
+            this.label = lable;
         }
+
+
         public int getParentID(){
             return parentID;
         }
@@ -21,11 +23,11 @@ public class Node2{
         }
 
         public String getLable(){
-            return lable;
+            return label;
         }
 
         public void setLable(String lable) {
-            this.lable = lable;
+            this.label = lable;
         }
 
         public int getId() {
@@ -34,7 +36,7 @@ public class Node2{
 
         @Override
         public String toString() {
-            return "{lable= '" + lable + '\'' + "" +
+            return "{label= '" + label + '\'' + "" +
                     ", id= " + id +
                     ", parentID= " + parentID + "" +
                     '}';
